@@ -2,7 +2,6 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
 const CustomButton = ({ item, index, playUser, userTurn, isGameOver, winner, winDigit }) => {
-  console.log(winDigit);
   return (
     <TouchableOpacity style={styles.CustomButton(winner, winDigit, index)}
       disabled={isGameOver || !userTurn || item != 0}

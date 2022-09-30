@@ -5,11 +5,10 @@ import { FlatGrid } from 'react-native-super-grid';
 
 
 const Home = () => {
-  // const [game, setGame] = useState(new Array(9).fill(0))
-  const [game, setGame] = useState([1, 1, 0, 2, 1, 2, 1, 2, 2])
+  const [game, setGame] = useState(new Array(9).fill(0))
   const [userTurn, setuserTurn] = useState(true)
   const [isGameOver, setisGameOver] = useState(false)
-  const [winner, setWinner] = useState()
+  const [winner, setWinner] = useState(0)
   const [winDigit, setWinDigit] = useState(new Array(3).fill(0))
 
   useEffect(() => {
